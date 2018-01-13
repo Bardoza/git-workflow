@@ -1,12 +1,12 @@
 ## ¿Qué es git?
 
-* Sistema de control de versión distribuido, todos los equipos cuentan con una copia completa incluyendo el historial.
+* `Sistema de control de versión distribuido`
 
 - Creado por Linus Torvalds
 
 - Ligero (uso snapshots)
 
-- Crear branch
+- Crear `branch`
 
 ![alt text](https://git-scm.com/book/en/v2/images/distributed.png "Diagrama control de versión distribuido")
 
@@ -14,7 +14,7 @@
 
 1.Iniciar repositoro
 
-* Clonar repositorio si ya existe
+* `Clonar` repositorio si ya existe
 
 ```git
 git clone #urlAClonar
@@ -45,7 +45,7 @@ git init
   git commit -m "Mensaje descriptivo de los cambios realizados"
 ```
 
-5. Hacer `push`de los cambios al servidor de ser necesario
+5. Hacer `push` de los cambios al servidor de ser necesario
 
 ```git
 git push origin master
@@ -70,3 +70,17 @@ git push origin master
 7. Al hacer merge se debe de enviar a producción lo antes posible
 
 8. Hacer `pull` a los cambios en master y reiniciar el ciclo ( volver a 3)
+
+## Glosario
+
+* **Sistema de control de versión distribuido:** todos los equipos cuentan con una copia completa incluyendo el historial.
+
+* **Branch:** git crea un nuevo puntero dirigido a un punto en especifico en el historial y permite crear una nueva historia a partir del mismo sin dañar, modificar o eliminar la linea original
+
+* **Clonar:** Obtener una copia idéntica e independiente de un repositorio remoto en el equipo local
+
+* **Stagin:** estado en el que se encuentra un archivo despues de ser editado pero antes de hacer el cambio permanente (`commit`)
+
+* **Push:** Enviar todos los `commits`locales al repositorio remoto
+
+* **Pull:** Obtener todos los commits remotos y hacer `merge` al branch actual

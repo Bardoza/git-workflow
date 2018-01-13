@@ -132,3 +132,10 @@ Evitar el uso de rebase en un repositorio compartido ya que reescribe la histori
 * **Fetch:** Accion de obtener los commits remotos de un upstream sin integrarlos a ningun branch
 
 * **HEAD:** último commit del branch
+
+## Referencias
+
+* [Sitio oficial git](https://git-scm.com/docs)
+* [github workflow](https://guides.github.com/introduction/flow/)
+
+**Imagenes proporcionadas por [git-scm](https://git-scm.com)**

@@ -51,7 +51,7 @@ git init
 git push origin master
 ```
 
-![alt text](https://git-scm.com/book/en/v2/images/areas.png "flujo básico git")
+![alt text](https://git-scm.com/figures/18333fig0201-tn.png "flujo básico git")
 
 ## Flujo de trabajo
 
@@ -84,3 +84,19 @@ git push origin master
 * **Push:** Enviar todos los `commits`locales al repositorio remoto
 
 * **Pull:** Obtener todos los commits remotos y hacer `merge` al branch actual
+
+* **Repositorio Master:** Repositorio principal, siempre listo para lanzar a producción y no puede ser editado directamente
+
+* **Fork:** Obtener una copia idéntica e independiente de un repositorio almacenado de manera remota, pero mantiene una referencia al repositorio principal
+
+* **Commit:** Guardar los cambios realizados al doucmento el la BD de git local
+
+* **Merge:** Forma de integrar cambios entre dos branch fusionando dos ramas
+
+* **Rebase:** Forma de integrar cambios entre dos ramas, reorganizando los commits de una de ellas
+
+* **Pull Request:** Es una petición que realiza el propietario de un `fork`al propietario del repositorio original para incorporar los commits que están en una rama particular del fork al repositorio principal
+
+* **Upstreams:** Repositorios remotos de los cuales podemos obtener cambios
+
+* **Fetch:** Accion de obtener los commits remotos de un upstream sin integrarlos a ningun branch

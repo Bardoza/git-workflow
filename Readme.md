@@ -71,6 +71,35 @@ git push origin master
 
 8. Hacer `pull` a los cambios en master y reiniciar el ciclo ( volver a 3)
 
+## Merge vs Rebase
+
+Los dos son herramientas para integrar cambios entre diferetentes branchs, la principal diferenca radica en que merge crea un commit nuevo que relaciona las dos branchs y rebase toma todos los commits de un branch y los reescribe en el historial de la nueva
+
+**Advertencia**
+
+Evitar el uso de rebase en un repositorio compartido ya que reescribe la historia
+
+## Comandos básicos
+
+* `git init`: Inicializa git en un repositorio local
+* `git clone @urlRepositorio`: crea una copia local de un repositorio
+* `git add @file`: Agrega los archivos modificados al área de stagin
+* `git branch`: Lista todas las branch locales e indica en que branch nos encontramos
+* `git branch @branch`: Crea un branch nuevo con el nombre utilizado
+* `git checkout @branch`: Cambia el branch activa a la indicada
+* `git checkout @commitHash`: Regresa al estado que se encontraba en un commit particular
+* `git checkout -b #nombreDelBranch`: Crea un branch con el nombre inidicado y asigna el branch nuevo como la activa. (implica: `git branch @branch` + `git checkout @branch` )
+* `git remote`: lista todos los nombres de los`remotes` asignados al repositorio local
+* `git remote -v`: lista todos los `remotes` con su url
+* `git remote add @nombre @url`: agrega un nuevo remote con su nombre y la url para obtener cambios
+* `git fetch @nombreRemote`: Obtiene commits y branch de un remote
+* `git merge @branch`: crea un nuevo commit e une los cambios de la branch seleccionada a la branch actual
+* `git pull @remoteName @remoteBranch`: obtiene los commits del branch remoto y los fusiona con el branch actual
+* `git push @remoteName @remoteBranch`: sube los commits locales y los combina en el branch remoto
+* `git config [options]`: muestra la configuracion de git local o remota
+* `git reset @file`: regresa el estado del archivo al ultimo commit
+* `git reset --hard head`: quita todos los cambios del area de staging y regresa el branch a su ultimo commit
+
 ## Glosario
 
 * **Sistema de control de versión distribuido:** todos los equipos cuentan con una copia completa incluyendo el historial.

@@ -130,3 +130,5 @@ Evitar el uso de rebase en un repositorio compartido ya que reescribe la histori
 * **Upstreams:** Repositorios remotos de los cuales podemos obtener cambios
 
 * **Fetch:** Accion de obtener los commits remotos de un upstream sin integrarlos a ningun branch
+
+* **HEAD:** último commit del branch

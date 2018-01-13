@@ -99,6 +99,7 @@ Evitar el uso de rebase en un repositorio compartido ya que reescribe la histori
 * `git config [options]`: muestra la configuracion de git local o remota
 * `git reset @file`: regresa el estado del archivo al ultimo commit
 * `git reset --hard head`: quita todos los cambios del area de staging y regresa el branch a su ultimo commit
+* `git status`: Muestra los archivos que estan en stagin o archivos nuevos y la diferencia de commits entre el branch local y el remote
 
 ## Glosario
 
